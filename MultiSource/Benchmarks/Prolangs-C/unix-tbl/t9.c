@@ -19,11 +19,11 @@ void yetmore(void)
 {
 for(useln=0; useln<MAXLIN && table[useln]==0; useln++);
 if (useln>=MAXLIN)
-	error("Wierd.  No data in table.");
+	error("Weird.  No data in table.");
 table[0]=table[useln];
 for(useln=nlin-1; useln>=0 && (fullbot[useln] || instead[useln]); useln--);
 if (useln<0)
-	error("Wierd.  No real lines in table.");
+	error("Weird.  No real lines in table.");
 domore((char *)leftover);
 while (gets1(cstore=cspace) && domore(cstore))
 	;
